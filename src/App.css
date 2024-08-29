@@ -1,0 +1,162 @@
+.app {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body and html take full height */
+html, body {
+  
+  margin: 0;
+}
+
+/* Flexbox container for body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* height: 200vh; */
+}
+
+/* Wrapper to contain content and footer */
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Grow the content area to fill available space */
+.content {
+  flex-grow: 1;
+}
+
+.title {
+  color: white;
+  max-width: 100%;
+  font-size: 40px;
+  background-color: #61dafb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 100px 10px #dcdbdb;
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.svg_icon {
+  position: absolute;
+  left: 5px;
+  fill: rgb(0, 132, 255);
+  width: 14px;
+  height: 14px;
+}
+
+.input {
+  width: calc(100% - 40px);
+  padding: 5px 10px 5px 30px;
+  font-size: 14px;
+  outline: none;
+  color: #000000;
+  border: 2px groove #c4d1eb;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.input:focus {
+  background: #f2f2f2;
+  border: 3px solid #3dbbed;
+}
+
+.input::placeholder {
+  color: #969090;
+}
+
+.btn {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 30px;
+  border-radius: 10px;
+  border: 1px solid #3866a3;
+  background: #00a7ee;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d82cf;
+}
+
+.child-div {
+  margin-top: 20px;
+  height: auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+    padding: 8px;
+  }
+
+  .main {
+    width: 95%;
+    padding: 15px 8px;
+  }
+
+  .input {
+    font-size: 12px;
+    padding: 4px 8px 4px 25px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 6px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+    padding: 6px;
+  }
+
+  .input {
+    font-size: 10px;
+    padding: 3px 6px 3px 20px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 5px 20px;
+  }
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
